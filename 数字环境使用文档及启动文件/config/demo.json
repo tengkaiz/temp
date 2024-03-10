@@ -1,0 +1,544 @@
+{
+  "configById": {
+    "Publish!2s5ut9f": {
+      "buttonText": "信号连接正常",
+      "buttonTooltip": "点击发布信号",
+      "advancedView": false,
+      "value": "{\n  \"data\": 0\n}",
+      "topicName": "/sign4return",
+      "datatype": "std_msgs/msg/Int32",
+      "foxglovePanelTitle": "信号连接正常"
+    },
+    "Publish!2ih9jm3": {
+      "buttonText": "C区进行遥测",
+      "buttonTooltip": "点击发布信号",
+      "advancedView": false,
+      "value": "{\n  \"data\": 5\n}",
+      "topicName": "/sign4return",
+      "datatype": "std_msgs/msg/Int32",
+      "foxglovePanelTitle": "正在C区进行遥测"
+    },
+    "Publish!ibzz6v": {
+      "buttonText": "C区出口结束遥测",
+      "buttonTooltip": "点击发布信号",
+      "advancedView": false,
+      "value": "{\n  \"data\": 6\n}",
+      "topicName": "/sign4return",
+      "datatype": "std_msgs/msg/Int32",
+      "foxglovePanelTitle": "C区出口结束遥测"
+    },
+    "Publish!4gz4cpm": {
+      "buttonText": "重置里程计",
+      "buttonTooltip": "点击发布信号",
+      "advancedView": false,
+      "value": "{\n  \"data\": -1\n}",
+      "topicName": "/sign4return",
+      "datatype": "std_msgs/msg/Int32",
+      "foxglovePanelTitle": "重置里程计"
+    },
+    "3D!18i6zy7": {
+      "layers": {
+        "cc5a4ae8-5255-44d6-8826-46b8cd1152ff": {
+          "visible": true,
+          "frameLocked": true,
+          "label": "Grid",
+          "instanceId": "cc5a4ae8-5255-44d6-8826-46b8cd1152ff",
+          "layerId": "foxglove.Grid",
+          "size": 5,
+          "divisions": 5,
+          "lineWidth": 1,
+          "color": "#248eff",
+          "position": [
+            2.5,
+            2.5,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "order": 3,
+          "frameId": "odom_combined"
+        },
+        "7b4595c2-f708-48e5-b685-9115d8edda5b": {
+          "visible": true,
+          "frameLocked": true,
+          "label": "Grid",
+          "instanceId": "7b4595c2-f708-48e5-b685-9115d8edda5b",
+          "layerId": "foxglove.Grid",
+          "size": 0.3,
+          "divisions": 1,
+          "lineWidth": 6,
+          "color": "#ff2424ff",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "order": 4,
+          "frameId": "base_link"
+        }
+      },
+      "cameraState": {
+        "perspective": true,
+        "distance": 6.146668610545646,
+        "phi": 1.5681313193018587,
+        "thetaOffset": 1.0386547398153478,
+        "targetOffset": [
+          2.6614661210794273,
+          2.2083545782829805,
+          5.934062571980387e-16
+        ],
+        "target": [
+          0,
+          0,
+          0
+        ],
+        "targetOrientation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "fovy": 45,
+        "near": 0.5,
+        "far": 5000
+      },
+      "followMode": "follow-none",
+      "followTf": "base_link",
+      "scene": {
+        "meshUpAxis": "y_up",
+        "backgroundColor": "#000000",
+        "enableStats": true,
+        "labelScaleFactor": 234.74,
+        "syncCamera": true,
+        "transforms": {
+          "labelSize": 0.15,
+          "showLabel": false,
+          "lineWidth": 2.5,
+          "editable": false
+        },
+        "ignoreColladaUpAxis": true
+      },
+      "transforms": {
+        "frame:base_footprint": {
+          "visible": false
+        },
+        "frame:base_link": {
+          "visible": true
+        },
+        "frame:back_caster_link": {
+          "visible": false
+        },
+        "frame:camera_link": {
+          "visible": false
+        },
+        "frame:laser_link": {
+          "visible": false
+        },
+        "frame:left_wheel_link": {
+          "visible": false
+        },
+        "frame:right_wheel_link": {
+          "visible": false
+        },
+        "frame:odom": {
+          "visible": true
+        },
+        "frame:down_left_Link": {
+          "visible": false
+        },
+        "frame:down_right_Link": {
+          "visible": false
+        },
+        "frame:up_left_Link": {
+          "visible": false
+        },
+        "frame:up_right_Link": {
+          "visible": false
+        },
+        "frame:odom_combined": {
+          "visible": true
+        },
+        "frame:gyro_link": {
+          "visible": false
+        }
+      },
+      "topics": {
+        "/camera/camera_info": {
+          "visible": false,
+          "distance": 0.8,
+          "planarProjectionFactor": 0.1
+        },
+        "/camera/image_raw": {
+          "visible": false,
+          "frameLocked": true,
+          "cameraInfoTopic": "/camera/camera_info",
+          "distance": 1,
+          "planarProjectionFactor": 0,
+          "color": "#ffffff"
+        },
+        "/camera/image_raw/compressed": {
+          "visible": false
+        },
+        "/camera/image_raw/compressedDepth": {
+          "visible": false
+        },
+        "/initialpose": {
+          "visible": false
+        },
+        "/move_base_simple/goal": {
+          "visible": false
+        },
+        "/scan": {
+          "visible": true,
+          "colorField": "intensity",
+          "colorMode": "flat",
+          "colorMap": "turbo",
+          "pointSize": 11,
+          "pointShape": "circle",
+          "flatColor": "#7f82f3ff"
+        },
+        "/robot_description": {
+          "visible": true
+        },
+        "/map": {
+          "visible": true,
+          "frameLocked": true,
+          "colorMode": "custom",
+          "alpha": 1,
+          "minColor": "#000000ff",
+          "maxColor": "#65ff00ff",
+          "unknownColor": "#ffffffff"
+        }
+      },
+      "publish": {
+        "type": "pose",
+        "poseTopic": "/move_base_simple/goal",
+        "pointTopic": "/clicked_point",
+        "poseEstimateTopic": "/initialpose",
+        "poseEstimateXDeviation": 0.5,
+        "poseEstimateYDeviation": 0.5,
+        "poseEstimateThetaDeviation": 0.26179939
+      },
+      "imageMode": {},
+      "foxglovePanelTitle": "地图"
+    },
+    "Indicator!vvn8vd": {
+      "path": "/cmd_vel.linear.x",
+      "style": "background",
+      "fallbackColor": "#a0a0a0",
+      "fallbackLabel": "未按下键盘",
+      "rules": [
+        {
+          "operator": ">",
+          "rawValue": "0",
+          "color": "#68e24a",
+          "label": "W - 前进"
+        },
+        {
+          "operator": "<",
+          "rawValue": "0",
+          "color": "#4f17c7",
+          "label": "S - 后退"
+        }
+      ],
+      "foxglovePanelTitle": "移动"
+    },
+    "Indicator!1yyal52": {
+      "path": "/cmd_vel.angular.z",
+      "style": "background",
+      "fallbackColor": "#a0a0a0",
+      "fallbackLabel": "未按下键盘",
+      "rules": [
+        {
+          "operator": ">",
+          "rawValue": "0",
+          "color": "#68e24a",
+          "label": "A - 左转向"
+        },
+        {
+          "operator": "<",
+          "rawValue": "0",
+          "color": "#4f17c7",
+          "label": "D - 右转向"
+        }
+      ],
+      "foxglovePanelTitle": "转向"
+    },
+    "Teleop!35641de": {
+      "topic": "/cmd_vel",
+      "publishRate": 1,
+      "upButton": {
+        "field": "linear-x",
+        "value": 0.3
+      },
+      "downButton": {
+        "field": "linear-x",
+        "value": 0
+      },
+      "leftButton": {
+        "field": "angular-z",
+        "value": 0.2
+      },
+      "rightButton": {
+        "field": "angular-z",
+        "value": -0.2
+      },
+      "foxglovePanelTitle": "虚拟按键"
+    },
+    "virtual-joystick.Virtual Joystick!ev81iw": {
+      "topic": "/cmd_vel",
+      "publishRate": 5,
+      "maxLinearSpeed": 0.3,
+      "maxAngularSpeed": 0.2,
+      "foxglovePanelTitle": "虚拟摇杆"
+    },
+    "Indicator!17qfywx": {
+      "path": "/sign_switch.sign_data",
+      "style": "bulb",
+      "fallbackColor": "#a0a0a0",
+      "fallbackLabel": "暂无指令",
+      "rules": [
+        {
+          "operator": "=",
+          "rawValue": "0",
+          "color": "#c88468",
+          "label": "信号连接正常"
+        },
+        {
+          "operator": "=",
+          "rawValue": "1",
+          "color": "#ea2929",
+          "label": "正在前往二维码区域"
+        },
+        {
+          "operator": "=",
+          "rawValue": "2",
+          "color": "#2bbf7",
+          "label": "已到达二维码区域"
+        },
+        {
+          "operator": "=",
+          "rawValue": "3",
+          "color": "#1a9320",
+          "label": "二维码数据为顺时针"
+        },
+        {
+          "operator": "=",
+          "rawValue": "4",
+          "color": "#889f6f",
+          "label": "二维码数据为逆时针"
+        },
+        {
+          "operator": "=",
+          "rawValue": "5",
+          "color": "#353214",
+          "label": "正在C区进行遥测"
+        },
+        {
+          "operator": "=",
+          "rawValue": "6",
+          "color": "#b75b2c",
+          "label": "C区出口结束遥测"
+        },
+        {
+          "operator": "=",
+          "rawValue": "7",
+          "color": "#831573",
+          "label": "结束"
+        }
+      ],
+      "foxglovePanelTitle": "小车信号"
+    },
+    "Indicator!2r8z8y2": {
+      "path": "/sign_foxglove.data",
+      "style": "background",
+      "fallbackColor": "#a0a0a0",
+      "fallbackLabel": "暂无指令",
+      "rules": [
+        {
+          "operator": "=",
+          "rawValue": "0",
+          "color": "#c88468",
+          "label": "信号连接正常"
+        },
+        {
+          "operator": "=",
+          "rawValue": "1",
+          "color": "#ea2929",
+          "label": "正在前往二维码区域"
+        },
+        {
+          "operator": "=",
+          "rawValue": "2",
+          "color": "#2bbf7",
+          "label": "已到达二维码区域"
+        },
+        {
+          "operator": "=",
+          "rawValue": "3",
+          "color": "#1a9320",
+          "label": "二维码数据为顺时针"
+        },
+        {
+          "operator": "=",
+          "rawValue": "4",
+          "color": "#889f6f",
+          "label": "二维码数据为逆时针"
+        },
+        {
+          "operator": "=",
+          "rawValue": "5",
+          "color": "#57e822",
+          "label": "正在C区进行遥测"
+        },
+        {
+          "operator": "=",
+          "rawValue": "6",
+          "color": "#b75b2c",
+          "label": "C区出口结束遥测"
+        },
+        {
+          "operator": "=",
+          "rawValue": "7",
+          "color": "#831573",
+          "label": "结束"
+        },
+        {
+          "operator": "=",
+          "rawValue": "-1",
+          "color": "#1a4fc5",
+          "label": "重置里程计"
+        }
+      ],
+      "foxglovePanelTitle": "上位机信号"
+    },
+    "Image!43ab5q8": {
+      "cameraState": {
+        "distance": 20,
+        "perspective": true,
+        "phi": 60,
+        "target": [
+          0,
+          0,
+          0
+        ],
+        "targetOffset": [
+          0,
+          0,
+          0
+        ],
+        "targetOrientation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "thetaOffset": 45,
+        "fovy": 45,
+        "near": 0.5,
+        "far": 5000
+      },
+      "followMode": "follow-pose",
+      "scene": {},
+      "transforms": {},
+      "topics": {},
+      "layers": {},
+      "publish": {
+        "type": "point",
+        "poseTopic": "/move_base_simple/goal",
+        "pointTopic": "/clicked_point",
+        "poseEstimateTopic": "/initialpose",
+        "poseEstimateXDeviation": 0.5,
+        "poseEstimateYDeviation": 0.5,
+        "poseEstimateThetaDeviation": 0.26179939
+      },
+      "imageMode": {
+        "imageTopic": "/image"
+      }
+    },
+    "RawMessages!os6rgs": {
+      "diffEnabled": false,
+      "diffMethod": "custom",
+      "diffTopicPath": "",
+      "showFullMessageForDiff": false,
+      "topicPath": "/odom",
+      "fontSize": 11
+    }
+  },
+  "globalVariables": {},
+  "userNodes": {
+    "6bd07826-80b7-48fa-8bf1-ec505ae86bb7": {
+      "sourceCode": "// The ./types module provides helper types for your Input events and messages.\nimport { Input, Message } from \"./types\";\n\n// Your script can output well-known message types, any of your custom message types, or\n// complete custom message types.\n//\n// Use `Message` to access types from the schemas defined in your data source:\n// type Twist = Message<\"geometry_msgs/Twist\">;\n//\n// Import from the @foxglove/schemas package to use foxglove schema types:\n// import { Pose, LocationFix } from \"@foxglove/schemas\";\n//\n// Conventionally, it's common to make a _type alias_ for your script's output type\n// and use that type name as the return type for your script function.\n// Here we've called the type `Output` but you can pick any type name.\ntype Output = {\n  hello: string;\n};\n\n// These are the topics your script \"subscribes\" to. Studio will invoke your script function\n// when any message is received on one of these topics.\nexport const inputs = [\"/input/topic\"];\n\n// Any output your script produces is \"published\" to this topic. Published messages are only visible within Studio, not to your original data source.\nexport const output = \"/studio_script/output_topic\";\n\n// This function is called with messages from your input topics.\n// The first argument is an event with the topic, receive time, and message.\n// Use the `Input<...>` helper to get the correct event type for your input topic messages.\nexport default function script(event: Input<\"/input/topic\">): Output {\n  return {\n    hello: \"world!\",\n  };\n};",
+      "name": "6bd07826"
+    }
+  },
+  "playbackConfig": {
+    "speed": 1
+  },
+  "layout": {
+    "first": {
+      "first": "Publish!2s5ut9f",
+      "second": {
+        "first": "Publish!2ih9jm3",
+        "second": {
+          "first": "Publish!ibzz6v",
+          "second": "Publish!4gz4cpm",
+          "direction": "column",
+          "splitPercentage": 16.49484536082474
+        },
+        "direction": "column",
+        "splitPercentage": 14.918203967977725
+      },
+      "direction": "column",
+      "splitPercentage": 12.3015873015873
+    },
+    "second": {
+      "first": {
+        "first": "3D!18i6zy7",
+        "second": {
+          "first": {
+            "first": {
+              "first": "Indicator!vvn8vd",
+              "second": "Indicator!1yyal52",
+              "direction": "column"
+            },
+            "second": "Teleop!35641de",
+            "direction": "row",
+            "splitPercentage": 54.9917873567337
+          },
+          "second": "virtual-joystick.Virtual Joystick!ev81iw",
+          "direction": "row",
+          "splitPercentage": 62.55282420750816
+        },
+        "direction": "column",
+        "splitPercentage": 74.48717948717949
+      },
+      "second": {
+        "first": {
+          "first": "Indicator!17qfywx",
+          "second": "Indicator!2r8z8y2",
+          "direction": "column"
+        },
+        "second": {
+          "first": "Image!43ab5q8",
+          "second": "RawMessages!os6rgs",
+          "direction": "column"
+        },
+        "direction": "column",
+        "splitPercentage": 28.333333333333332
+      },
+      "direction": "row",
+      "splitPercentage": 64.67991169977924
+    },
+    "direction": "row",
+    "splitPercentage": 11.5234375
+  }
+}

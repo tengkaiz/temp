@@ -213,6 +213,22 @@ unsigned char origincar_base::Check_Sum(unsigned char Count_Number,unsigned char
     return check_sum;
 }
 
+
+
+    // Receive_Data.rx[0]: 帧头(Frame Header)
+    // Receive_Data.rx[1]: 停止标志(Flag Stop)
+    // Receive_Data.rx[2]和Receive_Data.rx[3]: 机器人速度X分量(Robot_Vel.X)
+    // Receive_Data.rx[4]和Receive_Data.rx[5]: 机器人速度Y分量(Robot_Vel.Y)
+    // Receive_Data.rx[6]和Receive_Data.rx[7]: 机器人速度Z分量(Robot_Vel.Z)
+    // Receive_Data.rx[8]和Receive_Data.rx[9]: IMU加速度X分量(Mpu6050_Data.accele_x_data)
+    // Receive_Data.rx[10]和Receive_Data.rx[11]: IMU加速度Y分量(Mpu6050_Data.accele_y_data)
+    // Receive_Data.rx[12]和Receive_Data.rx[13]: IMU加速度Z分量(Mpu6050_Data.accele_z_data)
+    // Receive_Data.rx[14]和Receive_Data.rx[15]: IMU角速度X分量(Mpu6050_Data.gyros_x_data)
+    // Receive_Data.rx[16]和Receive_Data.rx[17]: IMU角速度Y分量(Mpu6050_Data.gyros_y_data)
+    // Receive_Data.rx[18]和Receive_Data.rx[19]: IMU角速度Z分量(Mpu6050_Data.gyros_z_data)
+    // Receive_Data.rx[20]和Receive_Data.rx[21]: 电池电压转换值(transition_16，通过移位运算合并而来)
+    // Receive_Data.rx[22]: 数据校验和(Check Sum)
+    // Receive_Data.rx[23]: 帧尾(Frame Tail)
 bool origincar_base::Get_Sensor_Data()
 {
     short transition_16 = 0, j = 0, Header_Pos = 0, Tail_Pos = 0;
@@ -270,7 +286,6 @@ bool origincar_base::Get_Sensor_Data()
         }
       }
     }
-
     return false;
 }
 

@@ -55,7 +55,7 @@ def generate_launch_description():
 
     return LaunchDescription(launch_args + [
         usb_node,
-        nv12_codec_node,
-        dnn_node_example_node,
-        web_node,
+        # nv12_codec_node,
+        # dnn_node_example_node,
+        # web_node,
     ])

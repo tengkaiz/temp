@@ -18,9 +18,9 @@ int main(int argc, char ** argv)
   while (cap.read(frame)) {
       // 在这里对每一帧图像进行处理
 
-      imwrite("Camera.jpg", frame); 
+      // imwrite("Camera.jpg", frame); 
       
-     // imshow("Camera", frame);  // 显示图像
+     imshow("Camera", frame);  // 显示图像
       if (cv::waitKey(1) == 27) {   // 按下ESC键退出循环
           break;
       }
